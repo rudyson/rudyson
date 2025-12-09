@@ -1,0 +1,57 @@
+<!--
+	© Ruslan Diadiushkin 2022-2023
+
+	Install tutorial:
+	Download Office Deployment Tool
+	https://www.microsoft.com/en-us/download/details.aspx?id=49117
+
+	Use this configuration on generate own on:
+	https://config.office.com/deploymentsettings
+
+	Open terminal in directory with configuration file and setup.exe
+
+	Run:
+	setup /download OfficeDeploymentToolConfiguration.xml
+
+	See more about Office Deployment Tool at:
+	http://aka.ms/ODT
+-->
+<Configuration ID="e7a2fce5-dae4-48da-91b0-1476bd78e00b">
+	<Info Description="Faculty of Physics, Electronics and Computer Systems" />
+	<Add OfficeClientEdition="64" Channel="Current">
+		<Product ID="O365BusinessRetail">
+			<Language ID="uk-ua" />
+			<Language ID="en-us" />
+			<ExcludeApp ID="Groove" />
+			<ExcludeApp ID="Lync" />
+			<ExcludeApp ID="OneDrive" />
+			<ExcludeApp ID="OneNote" />
+		</Product>
+		<Product ID="VisioProRetail" PIDKEY="KNH8D-FGHT4-T8RK3-CTDYJ-K2HT4">
+			<Language ID="uk-ua" />
+			<Language ID="en-us" />
+			<ExcludeApp ID="Groove" />
+			<ExcludeApp ID="Lync" />
+			<ExcludeApp ID="OneDrive" />
+			<ExcludeApp ID="OneNote" />
+		</Product>
+		<Product ID="LanguagePack">
+			<Language ID="uk-ua" />
+			<Language ID="en-us" />
+		</Product>
+		<Product ID="ProofingTools">
+			<Language ID="ru-ru" />
+		</Product>
+	</Add>
+	<Property Name="SharedComputerLicensing" Value="0" />
+	<Property Name="FORCEAPPSHUTDOWN" Value="FALSE" />
+	<Property Name="DeviceBasedLicensing" Value="0" />
+	<Property Name="SCLCacheOverride" Value="0" />
+	<Property Name="AUTOACTIVATE" Value="1" />
+	<Updates Enabled="TRUE" Channel="Current" />
+	<RemoveMSI />
+	<AppSettings>
+		<Setup Name="Company" Value="Oles Honchar Dnipro National University" />
+	</AppSettings>
+	<Display Level="None" AcceptEULA="TRUE" />
+</Configuration>
