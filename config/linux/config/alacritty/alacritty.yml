@@ -1,0 +1,19 @@
+font:
+  normal:
+    family: CaskaydiaCove Nerd Font
+    style: Light
+  bold:
+    family: CaskaydiaCove Nerd Font
+    style: Bold
+  italic:
+    family: CaskaydiaCove Nerd Font
+    style: Italic
+  size: 14
+  builtin_box_drawing: true
+window:
+  dynamic_title: true
+  opacity: 1
+  title: Alacritty
+  class:
+    general: Alacritty
+    instance: Alacritty

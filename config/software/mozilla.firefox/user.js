@@ -44,3 +44,23 @@ user_pref("network.allow-experiments", false);
 user_pref("dom.ipc.plugins.reportCrashURL", false);
 user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
 user_pref("browser.tabs.closeWindowWithLastTab", false);
+user_pref("browser.newtabpage.activity-stream.showSponsored", false);
+user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
+user_pref("browser.newtabpage.activity-stream.default.sites", "");
+
+// Home Page and New Window
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+user_pref("browser.startup.page", 0);
+user_pref("browser.startup.homepage", "about:blank");
+user_pref("browser.newtabpage.enabled", false);
+user_pref("browser.newtabpage.enhanced", false);
+user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
+user_pref("browser.tabs.inTitlebar", 0);
+
+// Tabs
+user_pref("browser.compactmode.show", true);
+user_pref("sidebar.verticalTabs", true);
+user_pref("sidebar.verticalTabs.dragToPinPromo.dismissed", true);
+
+// Features
+user_pref("browser.urlbar.suggest.calculator", true);
